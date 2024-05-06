@@ -27,8 +27,6 @@ module.exports = {
             player.setTextChannel(interaction.channel.id);
             player.setVoiceChannel(channel.id);
 
-            console.log(player.destroyed);
-
             let result = await kazagumo.search(string, { requester: interaction.author });
             if (!result.tracks.length) return await interaction.editReply(({content: "No results found"}));
 
