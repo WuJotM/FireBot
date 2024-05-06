@@ -18,6 +18,7 @@ module.exports = {
             return interaction.reply(`Force playing **${result.tracks[0].title}**`);
 
         } catch (err) {
+            console.log(err);
         }
     }
 }
